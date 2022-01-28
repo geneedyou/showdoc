@@ -75,7 +75,9 @@ export default {
           flowChart: true, // 默认不解析
           sequenceDiagram: true, // 默认不解析
           syncScrolling: 'single',
-          htmlDecode: 'style,script,iframe|filterXSS',
+          htmlDecode : true,                      // 开启 / 解析所有HTML标签  https://github.com/pandao/editor.md/issues/70
+          // htmlDecode : false,                     // 禁用HTML标签解析
+          // htmlDecode : "style,script,iframe|filterXSS",  // 指定你想禁止解析的HTML标签
           imageUpload: true,
           imageFormats: [
             'jpg',
