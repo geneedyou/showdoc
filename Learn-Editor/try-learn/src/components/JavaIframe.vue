@@ -14,7 +14,11 @@
 </template>
 
 <script>
-import * as monaco from "monaco-editor/esm/vs/editor/editor.api.js"; // 包体很大了 但是demo可以跑起来
+// https://zhuanlan.zhihu.com/p/47746336
+import "monaco-editor/esm/vs/basic-languages/javascript/javascript.contribution"; //javascript语法高亮
+import "monaco-editor/esm/vs/editor/contrib/find/findController.js"; //引入查找控件。
+import * as monaco from "monaco-editor/esm/vs/editor/editor.api"; // 包体很大了 但是demo可以跑起来
+// import * as monaco from 'monaco-editor/esm/vs/editor/editor.main.js';//自动带上所有的内置语言和控件，唯一的缺点就是包的体积过大。
 
 export default {
   name: "JavaIframe",
@@ -27,7 +31,7 @@ export default {
       value: ["function x() {", '\tconsole.log("Hello world!");', "}"].join(
         "\n"
       ),
-      language: "Java",
+      language: "javascript",
       // minimap: {
       //   enabled: false, //侧边栏预览
       // },
@@ -39,6 +43,7 @@ export default {
       // useTabStops: false,
       // fontSize: 16, // 字体大小
       // autoIndent: false, //自动布局
+      theme: "vs-dark",
     });
   },
 

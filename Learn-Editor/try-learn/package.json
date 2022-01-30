@@ -3,24 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "webpack-dev-server --open --port 8000 --hot --config webpack.config.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build-webpack": "node node_modules/webpack/bin/webpack.js --progress",
+    "lint": "vue-cli-service lint",
+    "start": "webpack-dev-server"
   },
   "dependencies": {
+    "@swc/core": "^1.2.135",
+    "@vue/compiler-sfc": "^3.2.29",
+    "autoprefixer": "^10.4.2",
     "core-js": "^3.6.5",
+    "cssnano": "^5.0.16",
+    "fibers": "^5.0.1",
+    "html-webpack-plugin": "^5.5.0",
     "monaco-editor": "^0.31.1",
+    "monaco-editor-webpack-plugin": "^7.0.1",
+    "postcss-loader": "^6.2.1",
+    "sass": "^1.49.0",
+    "sass-loader": "^12.4.0",
     "vue": "^3.0.0",
-    "vue-loader-v16": "^16.0.0-beta.5.4"
+    "vue-loader": "^16.8.3",
+    "vue-loader-v16": "^16.0.0-beta.5.4",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "css-loader": "^6.5.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "style-loader": "^3.3.1",
     "webpack-dev-server": "^4.7.3"
   },
   "eslintConfig": {
