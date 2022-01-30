@@ -20,3 +20,5 @@ web_src/*.njsproj
 web_src/*.sln
 
 Learn-Editor/**/node_modules
+Learn-Editor/**/public
+try-learn/**/public
