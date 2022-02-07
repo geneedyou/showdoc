@@ -1,0 +1,1954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Mon Feb 07 10:32:30 CST 2022</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:27,564</td>
+<td class="Message">null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">217</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:27,571</td>
+<td class="Message">null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">217</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:30,632</td>
+<td class="Message">Reconnecting, last destination was /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:30,645</td>
+<td class="Message">Reconnecting, last destination was /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:32:30,842</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: Network is unreachable: no further information: /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">105</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.53.105.150:6379
+java.net.SocketException: Network is unreachable: no further information
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:32:30,921</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: Network is unreachable: no further information: /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">105</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.53.105.150:6379
+java.net.SocketException: Network is unreachable: no further information
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:32:31,122</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:32:31,131</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:31,173</td>
+<td class="Message">{dataSource-1} failContinuous is true</td>
+<td class="MethodOfCaller">setFailContinuous</td>
+<td class="FileOfCaller">DruidAbstractDataSource.java</td>
+<td class="LineOfCaller">1791</td>
+</tr>
+
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:32:31,691</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:32:32,197</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:32:32,702</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:32:33,209</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:33,788</td>
+<td class="Message">Reconnected to 120.53.105.150:6379</td>
+<td class="MethodOfCaller">lambda$null$4</td>
+<td class="FileOfCaller">ReconnectionHandler.java</td>
+<td class="LineOfCaller">194</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:36,870</td>
+<td class="Message">Reconnected to 120.53.105.150:6379</td>
+<td class="MethodOfCaller">lambda$null$4</td>
+<td class="FileOfCaller">ReconnectionHandler.java</td>
+<td class="LineOfCaller">194</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:32:48,986</td>
+<td class="Message">{dataSource-1} failContinuous is false</td>
+<td class="MethodOfCaller">setFailContinuous</td>
+<td class="FileOfCaller">DruidAbstractDataSource.java</td>
+<td class="LineOfCaller">1796</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:03,892</td>
+<td class="Message">null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">217</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:03,893</td>
+<td class="Message">null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">217</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:03,950</td>
+<td class="Message">Reconnecting, last destination was /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:03,950</td>
+<td class="Message">Reconnecting, last destination was /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:03,955</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: Network is unreachable: no further information: /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">105</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.53.105.150:6379
+java.net.SocketException: Network is unreachable: no further information
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:03,962</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: Network is unreachable: no further information: /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">105</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.53.105.150:6379
+java.net.SocketException: Network is unreachable: no further information
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:09,246</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:09,245</td>
+<td class="Message">discard connection</td>
+<td class="MethodOfCaller">handleFatalError</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1849</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:09,250</td>
+<td class="Message">Failed to override connection auto commit/transaction isolation.</td>
+<td class="MethodOfCaller">getNonManagedTXConnection</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">198</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:09,254</td>
+<td class="Message">Failed restore connection&#39;s original auto commit setting.</td>
+<td class="MethodOfCaller">restoreOriginalAtributes</td>
+<td class="FileOfCaller">AttributeRestoringConnectionInvocationHandler.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3677)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 2 common frames omitted
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:09,257</td>
+<td class="Message">ClusterManager: Error managing cluster: Failure identifying failed instances when checking-in: connection disabled</td>
+<td class="MethodOfCaller">manage</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3941</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.quartz.JobPersistenceException: Failure identifying failed instances when checking-in: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.findFailedInstances(JobStoreSupport.java:3420)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterCheckIn(JobStoreSupport.java:3470)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: java.sql.SQLException: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:337)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedMethodAccessor126.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:498)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.prepareStatement(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectSchedulerStateRecords(StdJDBCDelegate.java:2992)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.findFailedInstances(JobStoreSupport.java:3384)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 4 common frames omitted
+<br />Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 2 common frames omitted
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 9,898 milliseconds ago. The last packet sent successfully to the server was 9,922 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:12,929</td>
+<td class="Message">Reconnecting, last destination was 120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:12,929</td>
+<td class="Message">Reconnecting, last destination was 120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:12,932</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: Network is unreachable: no further information: /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">105</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.53.105.150:6379
+java.net.SocketException: Network is unreachable: no further information
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:12,932</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: Network is unreachable: no further information: /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">105</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: no further information: /120.53.105.150:6379
+java.net.SocketException: Network is unreachable: no further information
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:17,448</td>
+<td class="Message">discard connection</td>
+<td class="MethodOfCaller">handleFatalError</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1849</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3861)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:17,449</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:17,451</td>
+<td class="Message">Failed to override connection auto commit/transaction isolation.</td>
+<td class="MethodOfCaller">getNonManagedTXConnection</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">198</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3861)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:17,452</td>
+<td class="Message">{dataSource-1} failContinuous is true</td>
+<td class="MethodOfCaller">setFailContinuous</td>
+<td class="FileOfCaller">DruidAbstractDataSource.java</td>
+<td class="LineOfCaller">1791</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:33:17,454</td>
+<td class="Message">Failed restore connection&#39;s original auto commit setting.</td>
+<td class="MethodOfCaller">restoreOriginalAtributes</td>
+<td class="FileOfCaller">AttributeRestoringConnectionInvocationHandler.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3677)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3896)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+<br />Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3861)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 2 common frames omitted
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:17,457</td>
+<td class="Message">An error occurred while scanning for the next triggers to fire.</td>
+<td class="MethodOfCaller">schedulerError</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">2407</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.quartz.JobPersistenceException: Couldn&#39;t acquire next trigger: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2923)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2805)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2803)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3864)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+<br />Caused by: java.sql.SQLException: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:337)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedMethodAccessor126.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:498)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.prepareStatement(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTriggerToAcquire(StdJDBCDelegate.java:2599)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2844)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 5 common frames omitted
+<br />Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3861)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 2 common frames omitted
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 28,161 milliseconds ago. The last packet sent successfully to the server was 28,182 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:575)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:630)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketException: Connection reset by peer: socket write error
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:566)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 21 common frames omitted
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:17,961</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:33:18,465</td>
+<td class="Message">create connection SQLException, url: jdbc:mysql://120.53.105.150:3306/try_learn?characterEncoding=UTF-8&amp;useUnicode=true&amp;useSSL=false&amp;tinyInt1isBit=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=Asia/Shanghai, errorCode 0, state 08S01</td>
+<td class="MethodOfCaller">run</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2781</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:456)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterEventAdapter.connection_connect(FilterEventAdapter.java:38)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_connect(FilterAdapter.java:787)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1646)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2779)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.net.SocketException: Network is unreachable: connect
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.Socket.connect(Socket.java:613)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 17 common frames omitted
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:20,337</td>
+<td class="Message">{dataSource-1} failContinuous is false</td>
+<td class="MethodOfCaller">setFailContinuous</td>
+<td class="FileOfCaller">DruidAbstractDataSource.java</td>
+<td class="LineOfCaller">1796</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:21,131</td>
+<td class="Message">Reconnecting, last destination was 120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:21,131</td>
+<td class="Message">Reconnecting, last destination was 120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:21,160</td>
+<td class="Message">Reconnected to 120.53.105.150:6379</td>
+<td class="MethodOfCaller">lambda$null$4</td>
+<td class="FileOfCaller">ReconnectionHandler.java</td>
+<td class="LineOfCaller">194</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 10:33:21,161</td>
+<td class="Message">Reconnected to 120.53.105.150:6379</td>
+<td class="MethodOfCaller">lambda$null$4</td>
+<td class="FileOfCaller">ReconnectionHandler.java</td>
+<td class="LineOfCaller">194</td>
+</tr>
+
+<tr class="error even">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:34:46,241</td>
+<td class="Message">discard connection</td>
+<td class="MethodOfCaller">handleFatalError</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">1849</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketTimeoutException: Read timed out
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.FilterInputStream.read(FilterInputStream.java:133)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 22 common frames omitted
+</td></tr>
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:34:46,244</td>
+<td class="Message">Failed to override connection auto commit/transaction isolation.</td>
+<td class="MethodOfCaller">getNonManagedTXConnection</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">198</td>
+</tr>
+<tr><td class="Exception" colspan="6">com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketTimeoutException: Read timed out
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.FilterInputStream.read(FilterInputStream.java:133)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 22 common frames omitted
+</td></tr>
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 10:34:46,245</td>
+<td class="Message">Failed restore connection&#39;s original auto commit setting.</td>
+<td class="MethodOfCaller">restoreOriginalAtributes</td>
+<td class="FileOfCaller">AttributeRestoringConnectionInvocationHandler.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+<tr><td class="Exception" colspan="6">java.sql.SQLException: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:702)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3677)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3363)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 2 common frames omitted
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketTimeoutException: Read timed out
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.FilterInputStream.read(FilterInputStream.java:133)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 22 common frames omitted
+</td></tr>
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2022-02-07 10:34:46,247</td>
+<td class="Message">ClusterManager: Error managing cluster: Failure identifying failed instances when checking-in: connection disabled</td>
+<td class="MethodOfCaller">manage</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3941</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.quartz.JobPersistenceException: Failure identifying failed instances when checking-in: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.findFailedInstances(JobStoreSupport.java:3420)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.clusterCheckIn(JobStoreSupport.java:3470)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3330)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.manage(JobStoreSupport.java:3935)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport$ClusterManager.run(JobStoreSupport.java:3972)
+<br />Caused by: java.sql.SQLException: connection disabled
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1169)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1154)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:337)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedMethodAccessor126.invoke(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Method.invoke(Method.java:498)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.prepareStatement(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectSchedulerStateRecords(StdJDBCDelegate.java:2992)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.findFailedInstances(JobStoreSupport.java:3384)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 4 common frames omitted
+<br />Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2064)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:738)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.logging.LogFilter.connection_setAutoCommit(LogFilter.java:445)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterAdapter.connection_setAutoCommit(FilterAdapter.java:986)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.filter.FilterChainImpl.connection_setAutoCommit(FilterChainImpl.java:733)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.setAutoCommit(ConnectionProxyImpl.java:429)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:713)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy322.setAutoCommit(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreCMT.getNonManagedTXConnection(JobStoreCMT.java:191)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.quartz.impl.jdbcjobstore.JobStoreSupport.doCheckin(JobStoreSupport.java:3322)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 2 common frames omitted
+<br />Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 31,487 milliseconds ago. The last packet sent successfully to the server was 31,514 milliseconds ago.
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.GeneratedConstructorAccessor152.newInstance(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:544)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:708)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:647)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.sendQueryString(NativeProtocol.java:892)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1073)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:2054)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: java.net.SocketTimeoutException: Read timed out
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.fill(ReadAheadInputStream.java:107)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:150)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.ReadAheadInputStream.read(ReadAheadInputStream.java:180)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.io.FilterInputStream.read(FilterInputStream.java:133)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:538)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 22 common frames omitted
+</td></tr>
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 14:14:38,567</td>
+<td class="Message">Unable to unsubscribe from subscriptions</td>
+<td class="MethodOfCaller">cancel</td>
+<td class="FileOfCaller">RedisMessageListenerContainer.java</td>
+<td class="LineOfCaller">868</td>
+</tr>
+<tr><td class="Exception" colspan="6">io.lettuce.core.RedisException: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.lettuce.core.LettuceFutures.awaitOrCancel(LettuceFutures.java:134)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.lettuce.core.FutureSyncInvocationHandler.handleInvocation(FutureSyncInvocationHandler.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.lettuce.core.internal.AbstractInvocationHandler.invoke(AbstractInvocationHandler.java:79)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.sun.proxy.$Proxy321.unsubscribe(Unknown Source)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.data.redis.connection.lettuce.LettuceSubscription.doUnsubscribe(LettuceSubscription.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.data.redis.connection.lettuce.LettuceSubscription.doClose(LettuceSubscription.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.data.redis.connection.util.AbstractSubscription.close(AbstractSubscription.java:106)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.data.redis.listener.RedisMessageListenerContainer$SubscriptionTask.cancel(RedisMessageListenerContainer.java:866)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.data.redis.listener.RedisMessageListenerContainer.stop(RedisMessageListenerContainer.java:225)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.data.redis.listener.RedisMessageListenerContainer.stop(RedisMessageListenerContainer.java:183)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:238)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.access$300(DefaultLifecycleProcessor.java:53)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:377)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:210)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:128)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1022)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:170)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:949)
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1134)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:750)
+</td></tr>
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,572</td>
+<td class="Message">Scheduler MyScheduler_$_LAPTOP-E26BUEGF1643965287484 paused.</td>
+<td class="MethodOfCaller">standby</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">585</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,631</td>
+<td class="Message">Reconnecting, last destination was /120.53.105.150:6379</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">171</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,817</td>
+<td class="Message">Shutting down ExecutorService &#39;jmReportTaskExecutor&#39;</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">ExecutorConfigurationSupport.java</td>
+<td class="LineOfCaller">218</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,823</td>
+<td class="Message">Shutting down Quartz Scheduler</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">SchedulerFactoryBean.java</td>
+<td class="LineOfCaller">845</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,823</td>
+<td class="Message">Scheduler MyScheduler_$_LAPTOP-E26BUEGF1643965287484 shutting down.</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">666</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,823</td>
+<td class="Message">Scheduler MyScheduler_$_LAPTOP-E26BUEGF1643965287484 paused.</td>
+<td class="MethodOfCaller">standby</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">585</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,826</td>
+<td class="Message">Scheduler MyScheduler_$_LAPTOP-E26BUEGF1643965287484 shutdown complete.</td>
+<td class="MethodOfCaller">shutdown</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">740</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,832</td>
+<td class="Message">dynamic-datasource start closing ....</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">217</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,841</td>
+<td class="Message">{dataSource-1} closing ...</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2029</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,847</td>
+<td class="Message">{dataSource-1} closed</td>
+<td class="MethodOfCaller">close</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">2101</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2022-02-07 14:14:38,849</td>
+<td class="Message">dynamic-datasource all closed success,bye</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">221</td>
+</tr>
+
+<tr class="warn even">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 14:14:38,872</td>
+<td class="Message">LettucePoolingConnectionProvider contains unreleased connections</td>
+<td class="MethodOfCaller">destroy</td>
+<td class="FileOfCaller">LettucePoolingConnectionProvider.java</td>
+<td class="LineOfCaller">229</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2022-02-07 14:14:38,880</td>
+<td class="Message">Cannot reconnect to [120.53.105.150:6379]: java.util.concurrent.CancellationException</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">AbstractInternalLogger.java</td>
+<td class="LineOfCaller">151</td>
+</tr>

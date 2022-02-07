@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link
+      rel="stylesheet"
+      data-name="vs/editor/editor.main"
+      href="./monaco-editor/min/vs/editor/editor.main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"
+    />
+    <style>
+      body {
+        margin: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="codeContainer">
+      <!-- <div class="codeContainerPadding"> -->
+      <div style="height: 70%; position: relative">
+        <div id="editorContainer"></div>
+        <div class="operator">
+          <div class="btn" onclick="run()">运行</div>
+          <!-- <div class="btn">运行版本</div> -->
+        </div>
+      </div>
+
+      <div style="height: 30%; display: flex; flex-direction: column">
+        <div class="compilerContainer">
+          <!-- <div>结果</div> -->
+          <div class="compilerInfo">
+            <div class="compilerInfoLeft">
+              <div class="cpu">运行耗时：</div>
+              <!-- <div class="cpu">CPU耗时: 0.09 sec(s)</div>
+                <div class="memory">, 内存占用: 36404 kilobyte(s)</div> -->
+            </div>
+            <div class="compilerInfoRight">
+              <div class="compiler">编译用时：</div>
+            </div>
+          </div>
+        </div>
+        <div id="resultContainer"></div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <style>
+      .codeContainer {
+        height: 498px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        /* height: 100%; */
+      }
+
+      #editorContainer {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      .operator {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: right;
+        bottom: 0.5px;
+        right: 0px;
+      }
+      .btn {
+        background-color: #56565659;
+        border-color: transparent;
+        color: white;
+        border-radius: 5px 5px 5px 5px;
+        height: 35px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        margin-right: 10px;
+      }
+      .btn:hover {
+        background-color: #565656;
+      }
+      .btn:last-child {
+        margin-right: 0px;
+        border-radius: 5px 5px 15px 5px;
+      }
+      .compilerContainer {
+        /* height: 20px; */
+        padding: 0 10px;
+      }
+      .compilerInfo {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+      }
+      .compilerInfoLeft {
+        display: flex;
+      }
+      #resultContainer {
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100%;
+        flex: 1;
+        /* height: 100%; */
+      }
+    </style>
+
+    <script>
+      var require = { paths: { vs: "./monaco-editor/min/vs" } };
+    </script>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./monaco-editor/min/vs/loader.js"></script>
+    <script src="./monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+    <script src="./monaco-editor/min/vs/editor/editor.main.js"></script>
+
+    <script>
+      var editor = null;
+      var resultContainer = null;
+      $.ajax({
+        url: "./codebase/HelloWorld.java",
+        async: false,
+        success: function (data) {
+          // let value = getValueByKey(data, "hello-world");
+          editor = monaco.editor.create(
+            document.getElementById("editorContainer"),
+            {
+              value: "",
+              language: "java",
+              theme: "vs-dark",
+              minimap: {
+                enabled: false, //侧边栏预览
+              },
+            }
+          );
+          resultContainer = monaco.editor.create(
+            document.getElementById("resultContainer"),
+            {
+              value: "",
+              language: "shell",
+              theme: "vs-dark",
+              minimap: {
+                enabled: false, //侧边栏预览
+              },
+            }
+          );
+          editor.setValue(data);
+          let currentValue = editor.getValue();
+          console.log("当前内容：", currentValue);
+
+          editor.onDidChangeModelContent((e) => {
+            let currentValue = editor.getValue();
+            console.log("修改后当前内容：", currentValue);
+          });
+
+          run();
+        },
+      });
+
+      function getValueByKey(data, key) {
+        return data[key];
+      }
+
+      function run() {
+        $.ajax({
+          url: "http://localhost:10004/jeecg-boot/try/common/run",
+          async: false,
+          type: "Post",
+          contentType: "application/json",
+          data: JSON.stringify({
+            code: editor.getValue(),
+          }),
+          success: function (data) {
+            if (data.success) {
+              if (data.result.success) {
+                resultContainer.setValue(data.result.out);
+                // 纳秒，时间单位。一秒的十亿分之一，即等于10的负9次方秒（1ns＝10s）。
+                $(".cpu").text(
+                  "运行耗时：" + data.result.runTakeTime / 1000000000.0 + "毫秒"
+                );
+                $(".compiler").text(
+                  "编译用时：" +
+                    data.result.compilerTakeTime / 1000000000.0 +
+                    "毫秒"
+                );
+              } else {
+                resultContainer.setValue(data.result.compilerMessage);
+              }
+            } else {
+              resultContainer.setValue(data.message);
+            }
+          },
+        });
+      }
+    </script>
+  </body>
+</html>
